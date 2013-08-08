@@ -1,0 +1,6 @@
+{
+  "name": "assemble-swig-example",
+  "dependencies": {
+    "bootstrap": "twitter/bootstrap"
+  }
+}
