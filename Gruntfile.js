@@ -26,17 +26,18 @@ module.exports = function(grunt) {
     // Build HTML from templates and data
     assemble: {
       options: {
+        engine: 'swig',
         // Change stylesheet to "assemble" or "bootstrap"
         stylesheet: 'assemble',
         flatten: true,
         assets: 'docs/assets',
-        partials: ['src/includes/*.hbs'],
-        helpers: ['src/helpers/helper-*.js'],
-        layout: 'src/layouts/default.hbs',
+        //partials: ['src/includes/*.swig'],
+        //helpers: ['src/helpers/helper-*.js'],
+        layout: 'src/layouts/default.swig',
         data: ['src/data/*.{json,yml}', 'package.json']
       },
       pages: {
-        src: 'src/*.hbs',
+        src: 'src/*.swig',
         dest: 'docs/'
       }
     },

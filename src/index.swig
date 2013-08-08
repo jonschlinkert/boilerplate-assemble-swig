@@ -2,4 +2,4 @@
 title: Overview
 lead: Your new project!
 ---
-{{md 'README.md'}}
+nothing here for swig

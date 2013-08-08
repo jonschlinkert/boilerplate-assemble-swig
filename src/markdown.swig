@@ -2,7 +2,5 @@
 title: Markdown
 files: ['src/content/markdown.md']
 ---
-<h1>{{title}}</h1>
-{{#each files}}
-  {{md this}}
-{{/each}}
+<h1>{{ title }}</h1>
+
