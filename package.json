@@ -24,8 +24,8 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "assemble": "~0.4.3",
-    "assemble-swig": "https://github.com/doowb/assemble-swig/tarball/master",
+    "assemble": "https://github.com/assemble/assemble/tarball/master",
+    "assemble-swig": "https://github.com/assemble/assemble-swig/tarball/master",
     "assemble-less": "~0.4.8",
     "grunt-contrib-clean": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.0",
