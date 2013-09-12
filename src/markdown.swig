@@ -1,6 +1,0 @@
----
-title: Markdown
-files: ['src/content/markdown.md']
----
-<h1>{{ title }}</h1>
-

@@ -1,9 +1,4 @@
----
-component: navbar
----
-{{! Navbar component
-================================================== }}
-<div class="navbar {{#is stylesheet "bootstrap"}}navbar-inverse{{/is}} navbar-fixed-top">
+<div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
       <button class="navbar-toggle btn btn-navbar" type="button" data-toggle="collapse" data-target="nav-collapse">
@@ -11,11 +6,11 @@ component: navbar
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand brand" href="{{relative page.dest "docs/index.html"}}">{{#if package.name}}{{ uppercase package.name }}{{else}}ASSEMBLE{{/if}}</a>
+      <a class="navbar-brand brand" href="#">ASSEMBLE</a>
       <div class="nav-collapse collapse bs-navbar-collapse">
         <ul class="nav navbar-nav pull-right">
-          <li{{#is basename "markdown"}} class="active"{{/is}}>
-            <a href="{{relative page.dest "docs/markdown.html"}}">Markdown</a>
+          <li class="active">
+            <a href="#">Markdown</a>
           </li>
           <li> <a href="http://assemble.io/docs/">Assemble Docs</a> </li>
         </ul>

@@ -1,5 +1,10 @@
 ---
-title: Overview
-lead: Your new project!
+title: Swig Boilerplate
+description: Your new assemble/swig project!
 ---
-nothing here for swig
+
+{% markdown %}
+# {{ title }}
+This is a markdown block.
+{{description}}
+{% endmarkdown %}
