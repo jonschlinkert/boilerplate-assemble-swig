@@ -5,16 +5,19 @@
  * Licensed under the MIT license.
  */
 
-var swig   = require('swig');
+
 var extras = require('swig-extras');
-var assembleSwig = new swig.Swig();
 
-var tags = [
- "markdown",
- "switch",
- "case"
-];
+module.exports.register = function(swig, opts) {
 
-tags.map(function(tag){
-  return extras.useTag(assembleSwig, tag);
-});
+  var tags = [
+   "markdown",
+   "switch",
+   "case"
+  ];
+
+  tags.map(function(tag){
+    return extras.useTag(swig, tag);
+  });
+
+};
