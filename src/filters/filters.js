@@ -5,21 +5,23 @@
  * Licensed under the MIT license.
  */
 
-var swig   = require('swig');
 var extras = require('swig-extras');
-var _      = require('lodash');
 
-var filters = [
-  "batch",
-  "groupby",
-  "markdown",
-  "nl2br",
-  "pluck",
-  "split",
-  "trim",
-  "truncate"
-];
+module.exports.register = function(swig, opts) {
 
-filters.map(function(filter){
-  return extras.useFilter(swig, filter);
-});
+  var filters = [
+    "batch",
+    "groupby",
+    "markdown",
+    "nl2br",
+    "pluck",
+    "split",
+    "trim",
+    "truncate"
+  ];
+
+  filters.map(function(filter){
+    return extras.useFilter(swig, filter);
+  });
+
+};
