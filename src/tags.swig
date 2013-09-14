@@ -1,5 +1,5 @@
 ---
-title: Swig Filters
+title: Swig Tags
 description: Your new assemble/swig project!
 foo: "a"
 bar: 'HEY'
@@ -11,24 +11,22 @@ replaced: '\\.'
 by: "!"
 people: [{ age: 23, name: 'Paul' }, { age: 26, name: 'Jane' }, { age: 23, name: 'Jim' }]
 ---
+
 <div class="page-header">
   <h1>{{ title }}</h1>
 </div>
 
 
-{# {{ linkTo "src/content/markdown.md" }} #}
+
+{{ obj|isEmpty }}
 
 
+{% markdown %}
+# {{ title }}
+This is a markdown block.
+{{description}}
+{% endmarkdown %}
 
-<h2>\{{ obj|isEmpty }}</h2>{{ obj|isEmpty }}
-
-
-{% macro input(type, name, id, label, value, error) %}
-  <label for="{{ name }}">{{ label }}</label>
-  <input type="{{ type }}" name="{{ name }}" id="{{ id }}" value="{{ value }}"{% if error %} class="error"{% endif %}>
-{% endmacro %}
-
-{{ input("text", "fname", "fname", "First Name", fname.value, fname.errors) }}
 
 {% switch foo %}
   {% case "a" %}This is A

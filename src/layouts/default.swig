@@ -1,3 +1,4 @@
+{% prettify %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,10 +9,9 @@
   <body>
     <div class="container">
       {%> "navbar" %}
-
       {{body}}
-
       {%> "footer" %}
     </div>
   </body>
 </html>
+{% prettify %}

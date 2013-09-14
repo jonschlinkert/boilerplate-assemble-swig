@@ -1,10 +1,10 @@
-# Typography 
+# Typography
 
 ## Headings
 
 Headings from `h1` through `h6` are constructed with a `#` for each level:
 
-``` markdown
+```markdown
 # h1 Heading
 ## h2 Heading
 ### h3 Heading
@@ -24,7 +24,7 @@ Renders to:
 
 HTML:
 
-``` html
+```html
 <h1>h1 Heading</h1>
 <h2>h2 Heading</h2>
 <h3>h3 Heading</h3>
@@ -39,18 +39,18 @@ HTML:
 <br>
 
 
-## Body Copy 
+## Body Copy
 
 Body copy written as normal, plain text will be wrapped with `<p></p>` tags in the rendered HTML.
 
 So this body copy:
 
-``` markdown
+```markdown
 Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.
 ```
 renders to this HTML:
 
-``` html
+```html
 <p>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</p>
 ```
 
@@ -67,12 +67,12 @@ For emphasizing a snippet of text with a heavier font-weight.
 
 The following snippet of text is **rendered as bold text**.
 
-``` markdown
+```markdown
 **rendered as bold text**
 ```
 and this HTML
 
-``` html
+```html
 <strong>rendered as bold text</strong>
 ```
 
@@ -81,12 +81,12 @@ For emphasizing a snippet of text with italics.
 
 The following snippet of text is _rendered as italicized text_.
 
-``` markdown
+```markdown
 _rendered as italicized text_
 ```
 and this HTML:
 
-``` html
+```html
 <em>rendered as italicized text</em>
 ```
 
@@ -99,10 +99,10 @@ and this HTML:
 ## Blockquotes
 For quoting blocks of content from another source within your document.
 
-Add `>` before any text you want to quote. 
+Add `>` before any text you want to quote.
 
-``` markdown
-Add `>` before any text you want to quote. 
+```markdown
+Add `>` before any text you want to quote.
 ```
 
 Renders to:
@@ -111,7 +111,7 @@ Renders to:
 
 and this HTML:
 
-``` html
+```html
 <blockquote>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 </blockquote>
@@ -119,23 +119,23 @@ and this HTML:
 
 Blockquotes can also be nested:
 
-``` markdown
-> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. 
-Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. 
->> Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor 
+```markdown
+> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
+>> Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor
 odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
->>> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. 
-Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. 
+>>> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
 ```
 
 Renders to:
 
-> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. 
-Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. 
->> Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor 
+> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
+>> Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor
 odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
->>> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. 
-Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. 
+>>> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
 
 
 <br>
@@ -148,7 +148,7 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
 ### Unordered
 A list of items in which the order does not explicitly matter.
 
-``` markdown
+```markdown
 * Lorem ipsum dolor sit amet
 * Consectetur adipiscing elit
 * Integer molestie lorem at massa
@@ -179,7 +179,7 @@ Renders to:
 
 And this HTML
 
-``` html
+```html
 <ul>
   <li>Lorem ipsum dolor sit amet</li>
   <li>Consectetur adipiscing elit</li>
@@ -203,7 +203,7 @@ And this HTML
 
 A list of items in which the order does explicitly matter.
 
-``` markdown
+```markdown
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
@@ -226,7 +226,7 @@ Renders to:
 
 And this HTML:
 
-``` html
+```html
 <ol>
   <li>Lorem ipsum dolor sit amet</li>
   <li>Consectetur adipiscing elit</li>
@@ -252,7 +252,7 @@ Wrap inline snippets of code with `` ` ``.
 
 For example, `<section></section>` should be wrapped as "inline".
 
-``` html
+```html
 For example, `<section></section>` should be wrapped as "inline".
 ```
 
@@ -276,10 +276,10 @@ Or indent several lines of code by at least four spaces, as in:
 
 ### Block code "fences"
 
-Use "fences"  ```` ``` ```` to block in multiple lines of code. 
+Use "fences"  ```` ``` ```` to block in multiple lines of code.
 
 <pre>
-``` html
+```html
 Sample text here...
 ```
 </pre>
@@ -291,7 +291,7 @@ Sample text here...
 
 HTML:
 
-``` html
+```html
 <pre>
   <p>Sample text here...</p>
 </pre>
@@ -382,7 +382,7 @@ And this complicated HTML:
 Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.
 
 
-``` markdown
+```markdown
 | Option | Description |
 | ------ | ----------- |
 | data   | path to data files to supply the data that will be passed into templates. |
@@ -400,7 +400,7 @@ Renders to:
 
 And this HTML:
 
-``` html
+```html
 <table>
   <tr>
     <th>Option</th>
@@ -425,7 +425,7 @@ And this HTML:
 
 Adding a colon on the right side of the dashes below any heading will right align text for that column.
 
-``` markdown
+```markdown
 | Option | Description |
 | ------:| -----------:|
 | data   | path to data files to supply the data that will be passed into templates. |
@@ -449,7 +449,7 @@ Adding a colon on the right side of the dashes below any heading will right alig
 
 ### Basic link
 
-``` markdown
+```markdown
 [Assemble](http://assemble.io)
 ```
 
@@ -459,14 +459,14 @@ Renders to:
 
 HTML:
 
-``` html
+```html
 <a href="http://assemble.io">Assemble</a>
 ```
 
 
 ### Add a title
 
-``` markdown
+```markdown
 [Upstage](https://github.com/upstage/ "Visit Upstage!")
 ```
 
@@ -476,7 +476,7 @@ Renders to:
 
 HTML:
 
-``` html
+```html
 <a href="https://github.com/upstage/" title="Visit Upstage!">Upstage</a>
 ```
 
@@ -489,20 +489,20 @@ HTML:
 ## Images
 Images have a similar syntax to links but include a preceding exclamation point.
 
-``` markdown
+```markdown
 ![Minion](http://octodex.github.com/images/minion.png)
 ```
 ![Minion](http://octodex.github.com/images/minion.png)
 
 or
-``` markdown
+```markdown
 ![Alt text](http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 ```
 ![Alt text](http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
 Like links, Images also have a footnote style syntax
 
-``` markdown
+```markdown
 ![Alt text][id]
 ```
 ![Alt text][id]
