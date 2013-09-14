@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 
     // Build HTML from templates and data
     assemble: {
-      options: grunt.util._.extend({
+      options: {
         engine: 'swig',
         // example options for markdown tag/filter
         marked: {
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
         layoutdir: 'src/layouts',
         layout: 'default.swig',
         data: ['src/data/**/*.{json,yml}', 'package.json']
-      }),
+      },
       pages: {
         src: [
           'src/*.swig'
