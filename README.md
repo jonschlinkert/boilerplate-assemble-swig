@@ -10,7 +10,7 @@
 * [sublime-markdown-extended](https://github.com/jonschlinkert/sublime-markdown-extended)
 * [assemble](http://github.com/assemble) (see the [live docs](http://assemble.io))
 * [assemble-swig](http://github.com/assemble/assemble-swig)
-* [assemble-swig-examples](http://github.com/assemble/assemble-swig-examples)
+* [assemble-swig-examples](http://github.com/assemble/boilerplate-swig)
 
 
 ## Contributing
