@@ -19,7 +19,8 @@ module.exports.register = function(swig, opts) {
   var extrasTags = [
    // "markdown"
    "switch",
-   "case"
+   "case",
+   // "md"
   ];
   extrasTags.map(function(tag){
     return extras.useTag(swig, tag);
@@ -30,5 +31,6 @@ module.exports.register = function(swig, opts) {
   // here for purposes of instruction.
   extensions.useTag(swig, 'prettify');
   extensions.useTag(swig, 'markdown');
+  // extensions.useTag(swig, 'md');
 };
 
