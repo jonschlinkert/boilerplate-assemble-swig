@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Swig Filters
 description: Your new assemble/swig project!
 foo: "a"

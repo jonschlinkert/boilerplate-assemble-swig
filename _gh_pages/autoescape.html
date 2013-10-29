@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>{{ title }}</title>
+    <title>autoescape</title>
     <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css">
   </head>
   <body style="padding-top: 80px;">
@@ -20,39 +20,47 @@
           </div>
           <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
             <ul class="nav navbar-nav">
-              <li{% if basename == "extend" %} class="active"{% endif %}>
-                <a href="extend.html">Extend</a>
-              </li>
-              <li{% if basename == "autoescape" %} class="active"{% endif %}>
+              <li> <a href="extend.html">Extend</a> </li>
+              <li class="active">
                 <a href="autoescape.html">Autoescape</a>
               </li>
-              <li{% if basename == "condense" %} class="active"{% endif %}>
-                <a href="condense.html">Condense</a>
-              </li>
-              <li{% if basename == "filters" %} class="active"{% endif %}>
-                <a href="filters.html">Filters</a>
-              </li>
-              <li{% if basename == "markdown" %} class="active"{% endif %}>
-                <a href="markdown.html">Markdown</a>
-              </li>
-              <li{% if basename == "tags" %} class="active"{% endif %}>
-                <a href="tags.html">Tags</a>
-              </li>
-              <li{% if basename == "page" %} class="active"{% endif %}>
-                <a href="page.html">Page</a>
-              </li>
+              <li> <a href="condense.html">Condense</a> </li>
+              <li> <a href="filters.html">Filters</a> </li>
+              <li> <a href="markdown.html">Markdown</a> </li>
+              <li> <a href="tags.html">Tags</a> </li>
+              <li> <a href="page.html">Page</a> </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li{% if basename == "about" %} class="active"{% endif %}>
-                <a href="about.html">About</a>
-              </li>
+              <li> <a href="about.html">About</a> </li>
             </ul>
           </nav>
         </div>
       </header>
-
-      {{body}}
-      {%> "footer" %}
+      <h1>
+        &lt;p&gt;This is a paragraph&lt;/p&gt;
+      </h1>
+      <h1>
+        <p>This is a paragraph</p>
+      </h1>
+      <h1>
+        &lt;p&gt;This is a paragraph&lt;/p&gt;
+      </h1>
+      <h1>
+        &lt;p&gt;This is a paragraph&lt;/p&gt;
+      </h1>
+      <h1>
+        <p>This is a paragraph</p>
+      </h1>
+      <h1>
+        &lt;p&gt;This is a paragraph&lt;/p&gt;
+      </h1>
+      <div class="bs-footer">
+        <ul class="footer-links">
+          <li> <a href="#">One</a> </li>
+          <li> <a href="#">Two</a> </li>
+          <li> <a href="#">Three</a> </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

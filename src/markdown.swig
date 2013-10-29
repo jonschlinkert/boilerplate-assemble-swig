@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Example title from YFM
 description: |
   # Markdown Filter

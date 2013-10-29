@@ -11,12 +11,17 @@
 module.exports = function(grunt) {
 
   grunt.util._.mixin({
-    read: grunt.file.read
+    read: function(src) {
+      grunt.file.read(require('path').join('src/content', src));
+    }
   });
+
+  var pretty = require('pretty');
 
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
+    pkg : grunt.file.readJSON('package.json'),
+    site: grunt.file.readYAML('_config.yml'),
 
     // Lint JavaScript
     jshint: {
@@ -30,35 +35,32 @@ module.exports = function(grunt) {
     assemble: {
       options: {
         engine: 'swig',
-        // example options for markdown tag/filter
-        marked: {
-          gfm: true
-        },
-        // prettify tag/filter
-        prettify: {
-          condense: true,
-          padcomments: true
-        },
-        flatten: true,
+
+        // Register Swig extensions
         helpers: ['src/extensions/*.js', 'src/extensions/filters/*.js'],
-        assets: 'docs/assets',
-        partials: ['src/includes/**/*.swig'],
+
+        // Templates and data
+        data: ['src/data/*.{json,yml}'],
+        partials: ['src/includes/*.swig'],
         layoutdir: 'src/layouts',
-        layout: 'default.swig',
-        data: ['src/data/**/*.{json,yml}', 'package.json']
+        layoutext: '.swig',
+        layout: 'default',
+
+        flatten: true,
+        site: '<%= site %>',
+        assets: '<%= site.dest %>/assets',
+        postprocess: pretty
       },
       pages: {
-        src: [
-          'src/*.swig'
-        ],
-        dest: 'docs/'
+        src: ['src/*.swig'],
+        dest: '<%= site.dest %>/'
       }
     },
 
     // Before generating any new files,
     // remove files from previous build.
     clean: {
-      example: ['docs/*.html']
+      example: ['<%= site.dest %>/*.html']
     }
   });
 
@@ -66,8 +68,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-newer');
 
   // Default tasks to be run.
   grunt.registerTask('default', ['clean', 'jshint', 'assemble']);
