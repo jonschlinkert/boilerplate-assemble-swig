@@ -68,6 +68,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-verb');
 
   // Default tasks to be run.
   grunt.registerTask('default', ['clean', 'jshint', 'assemble']);
