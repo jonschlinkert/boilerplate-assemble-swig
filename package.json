@@ -37,7 +37,8 @@
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-jshint": "~0.7.0",
-    "pretty": "~0.1.1"
+    "pretty": "~0.1.1",
+    "grunt-verb": "~0.2.4"
   },
   "keywords": [
     "assemble",
